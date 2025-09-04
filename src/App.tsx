@@ -1,7 +1,5 @@
 import "./App.css";
 import { useLuksoAssets } from "./hook/useLuksoAssets";
-import { useContext } from "react";
-import { LuksoAuthContext } from "./context/LuksoAuthContext";
 import {
   Card,
   CardContent,
@@ -13,12 +11,7 @@ import Button from "@/components/ui/button";
 import { TokenCard } from "@/components/TokenCard";
 
 function App() {
-  const { assets, loading, contextAccounts } = useLuksoAssets();
-  const authContext = useContext(LuksoAuthContext);
-
-  // Debug info
-  console.log("App render - contextAccounts:", contextAccounts);
-  console.log("App render - walletConnected:", authContext?.walletConnected);
+  const { assets, loading } = useLuksoAssets();
 
   // Claim handler mock
   const handleClaim = (assetAddress: string) => {
@@ -49,12 +42,6 @@ function App() {
             <CardTitle className="text-lg font-semibold text-gray-900">
               Assets to claim ({assets.length})
             </CardTitle>
-            {/* Debug info - rimuovi in produzione */}
-            {/* <CardDescription className="text-xs text-gray-500">
-              Debug - accounts: {JSON.stringify(accounts)}
-              <br />
-              walletConnected: {authContext?.walletConnected ? "true" : "false"}
-            </CardDescription> */}
           </CardHeader>
 
           <CardContent className="pt-0">
