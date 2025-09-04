@@ -1,12 +1,6 @@
 import "./App.css";
 import { useLuksoAssets } from "./hook/useLuksoAssets";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import Button from "@/components/ui/button";
 import { TokenCard } from "@/components/TokenCard";
 
