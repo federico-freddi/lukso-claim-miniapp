@@ -22,10 +22,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
+    <div className="min-h-screen bg-gray-50 p-4 text-center">
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Header Card */}
-        <Card className="bg-white shadow-sm">
+        <Card className=" shadow-sm">
           <CardHeader className="pb-4">
             <CardTitle className="text-2xl font-bold text-gray-900">
               Claim your tokens
