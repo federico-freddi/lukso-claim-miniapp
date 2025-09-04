@@ -16,8 +16,7 @@ const MOCK_ASSETS: AssetInfo[] = [
     address: "0x1",
     name: "LUKSO",
     symbol: "LYX",
-    image:
-      "https://raw.githubusercontent.com/lukso-network/assets/master/token-icons/lyx.svg",
+    image: "https://s2.coinmarketcap.com/static/img/coins/64x64/8151.png",
     balance: "12,600",
     type: "LSP7",
   },
@@ -25,16 +24,16 @@ const MOCK_ASSETS: AssetInfo[] = [
     address: "0x2",
     name: "Fish",
     symbol: "FSH",
-    image: "https://cryptologos.cc/logos/fish-coin-fsh-logo.png",
+    image:
+      "https://assets.coingecko.com/coins/images/279/standard/ethereum.png",
     balance: "50,789",
     type: "LSP7",
   },
   {
     address: "0x3",
-    name: "Lukso Lil Monsters",
+    name: "Lukso Li...",
     symbol: "LLM",
-    image:
-      "https://raw.githubusercontent.com/lukso-network/assets/master/token-icons/llm.png",
+    image: "https://assets.coingecko.com/coins/images/1/standard/bitcoin.png",
     balance: "12,600",
     type: "LSP8",
   },
@@ -43,7 +42,7 @@ const MOCK_ASSETS: AssetInfo[] = [
     name: "FABS",
     symbol: "FAB",
     image:
-      "https://raw.githubusercontent.com/lukso-network/assets/master/token-icons/fab.png",
+      "https://assets.coingecko.com/coins/images/877/standard/chainlink-new-logo.png",
     balance: "100",
     type: "LSP7",
   },
@@ -52,7 +51,7 @@ const MOCK_ASSETS: AssetInfo[] = [
     name: "Lone Ranger",
     symbol: "LNR",
     image:
-      "https://raw.githubusercontent.com/lukso-network/assets/master/token-icons/lnr.png",
+      "https://assets.coingecko.com/coins/images/4713/standard/polygon.png",
     balance: "1",
     type: "LSP8",
   },

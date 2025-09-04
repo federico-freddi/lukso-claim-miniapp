@@ -22,27 +22,24 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 text-center">
-      <div className="max-w-2xl mx-auto space-y-6">
-        {/* Header Card */}
-        <Card className=" shadow-sm">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-2xl font-bold text-gray-900">
-              Claim your tokens
-            </CardTitle>
-            <CardDescription className="text-base text-gray-600">
-              You are eligible for (<b>{assets.length}</b>) claims
-            </CardDescription>
-          </CardHeader>
-        </Card>
+    <div className="min-h-screen bg-gray-50 p-6">
+      <div className="max-w-3xl mx-auto">
+        {/* Header Section */}
+        <div className="bg-white rounded-3xl p-8 mb-8 border border-gray-100">
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">
+            Claim your tokens
+          </h1>
+          <p className=" text-lg">
+            You are eligible for (
+            <span className="font-semibold">{assets.length}</span>) claims
+          </p>
+        </div>
 
         {/* Assets Section */}
-        <Card className="bg-white shadow-sm">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-lg font-semibold text-gray-900">
-              Assets to claim ({assets.length})
-            </CardTitle>
-          </CardHeader>
+        <div className="bg-white rounded-3xl p-8 border border-gray-100">
+          <h2 className="text-xl font-semibold mb-6 text-left">
+            Assets to claim ({assets.length})
+          </h2>
 
           <CardContent className="pt-0">
             {loading ? (
@@ -63,23 +60,28 @@ function App() {
               </div>
             )}
           </CardContent>
-        </Card>
 
-        {/* Action Buttons */}
-        {assets.length > 0 && (
-          <div className="flex gap-4">
-            <Button variant="outline" size="lg" className="flex-1" disabled>
-              Set up claim
-            </Button>
-            <Button
-              size="lg"
-              className="flex-1 bg-slate-800 hover:bg-slate-700"
-              onClick={handleClaimAll}
-            >
-              Claim all
-            </Button>
-          </div>
-        )}
+          {/* Action Buttons */}
+          {assets.length > 0 && (
+            <div className="flex gap-4 pt-6 border-t border-gray-100">
+              <Button
+                variant="outline"
+                size="lg"
+                className="flex-1 bg-white border-gray-200 text-gray-600 font-semibold py-4 rounded-2xl hover:bg-gray-50"
+                disabled
+              >
+                Set up claim
+              </Button>
+              <Button
+                size="lg"
+                className="flex-1 bg-slate-700 hover:bg-slate-800 text-white font-semibold py-4 rounded-2xl"
+                onClick={handleClaimAll}
+              >
+                Claim all
+              </Button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
