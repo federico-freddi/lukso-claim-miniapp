@@ -1,6 +1,5 @@
 import "./App.css";
 import { useLuksoAssets } from "./hook/useLuksoAssets";
-import { CardContent } from "@/components/ui/card";
 import Button from "@/components/ui/button";
 import { TokenCard } from "@/components/TokenCard";
 
@@ -35,7 +34,7 @@ function App() {
             Assets to claim ({assets.length})
           </h2>
 
-          <CardContent className="pt-0">
+          <div className="pt-0">
             {loading ? (
               <div className="text-center text-gray-500 py-8">Loading...</div>
             ) : assets.length === 0 ? (
@@ -53,7 +52,7 @@ function App() {
                 ))}
               </div>
             )}
-          </CardContent>
+          </div>
 
           {/* Action Buttons */}
           {assets.length > 0 && (
