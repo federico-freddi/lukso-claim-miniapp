@@ -13,7 +13,7 @@ import Button from "@/components/ui/button";
 import { TokenCard } from "@/components/TokenCard";
 
 function App() {
-  const { assets, loading, contextAccounts, accounts } = useLuksoAssets();
+  const { assets, loading, contextAccounts } = useLuksoAssets();
   const authContext = useContext(LuksoAuthContext);
 
   // Debug info
